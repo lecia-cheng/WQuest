@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import HomePage from './Home';
 import LeaderBoard from './Leaderboard';
-import ProblemSets from './ProblemSets';
+import ProblemSets from './ProblemSets/ProblemSets';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 function App() {
