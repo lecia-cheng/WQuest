@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 // navigate to different end points.
 import { Link } from "react-router-dom";
 import { useNavigate } from 'react-router-dom';
-import logo from './Assets/logo.png'
+import logo from '../../Assets/logo.png'
 
 const Home = () => {
     return (    

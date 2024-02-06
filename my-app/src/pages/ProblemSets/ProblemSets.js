@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 const ProblemSets = () => {
 	return (
 		<div className="App">
-			<div>ProblemSets</div>
+			<div className="text-primary">ProblemSets</div>
 		</div>
 	);
 };

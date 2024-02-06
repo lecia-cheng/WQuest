@@ -1,8 +1,7 @@
-import logo from './logo.svg';
 import './App.css';
-import HomePage from './Home';
-import LeaderBoard from './Leaderboard';
-import ProblemSets from './ProblemSets/ProblemSets';
+import HomePage from './pages/Home/Home';
+import LeaderBoard from './pages/Leaderboard/Leaderboard';
+import ProblemSets from './pages/ProblemSets/ProblemSets';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 function App() {
