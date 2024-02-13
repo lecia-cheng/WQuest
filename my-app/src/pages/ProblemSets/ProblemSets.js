@@ -5,11 +5,7 @@ import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
 const ProblemSets = () => {
-	return (
-		<div className="App">
-			<div className="text-primary">ProblemSets</div>
-		</div>
-	);
+	return <div className="container">ProblemSets</div>;
 };
 
 export default ProblemSets;
