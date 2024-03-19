@@ -15,13 +15,13 @@ const ListItem = () => {
 				role="cell"
 				className="mx-2 flex items-center py-[11px]"
 				style={{
-                    boxSizing: "border-box",
-                    flex: "52 0 auto",
-                    minWidth: "0px",
-                    width: "52px",
-                }}
+					boxSizing: "border-box",
+					flex: "52 0 auto",
+					minWidth: "0px",
+					width: "52px",
+				}}
 			>
-				<a href="/problems/diameter-of-binary-tree/?envType=daily-question&amp;envId=2024-02-27">
+				<a href="LINK">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						viewBox="0 0 24 24"
@@ -42,19 +42,19 @@ const ListItem = () => {
 				role="cell"
 				className="mx-2 flex items-center py-[11px]"
 				style={{
-                    boxSizing: "border-box",
-                    flex: "260 0 auto",
-                    minWidth: "0px",
-                    width: "260px",
-                    cursor: "pointer",
-                }}
+					boxSizing: "border-box",
+					flex: "260 0 auto",
+					minWidth: "0px",
+					width: "260px",
+					cursor: "pointer",
+				}}
 			>
 				<div className="max-w-[302px] flex items-center overflow-hidden">
 					<div className="overflow-hidden">
 						<div className="flex items-center">
 							<div className="truncate">
 								<a
-									href="/problems/diameter-of-binary-tree/?envType=daily-question&amp;envId=2024-02-27"
+									href="LINK"
 									className="h-5 hover:text-blue-s dark:hover:text-dark-blue-s"
 								>
 									543. Diameter of Binary Tree
@@ -68,15 +68,15 @@ const ListItem = () => {
 				role="cell"
 				className="mx-2 flex items-center py-[11px]"
 				style={{
-                    boxSizing: "border-box",
-                    flex: "54 0 auto",
-                    minWidth: "0px",
-                    width: "54px",
-                }}
+					boxSizing: "border-box",
+					flex: "54 0 auto",
+					minWidth: "0px",
+					width: "54px",
+				}}
 			>
 				<a
 					aria-label="solution"
-					href="/problems/diameter-of-binary-tree/solution"
+					href="LINK"
 					className="truncate"
 				>
 					<svg
@@ -96,12 +96,12 @@ const ListItem = () => {
 				role="cell"
 				className="mx-2 flex items-center py-[11px]"
 				style={{
-                    boxSizing: "border-box",
-                    flex: "84 0 auto",
-                    minWidth: "0px",
-                    width: "84px",
-                    cursor: "pointer",
-                }}
+					boxSizing: "border-box",
+					flex: "84 0 auto",
+					minWidth: "0px",
+					width: "84px",
+					cursor: "pointer",
+				}}
 			>
 				<span>59.8%</span>
 			</div>
@@ -109,11 +109,11 @@ const ListItem = () => {
 				role="cell"
 				className="mx-2 flex items-center py-[11px]"
 				style={{
-                    boxSizing: "border-box",
-                    flex: "84 0 auto",
-                    minWidth: "0px",
-                    width: "84px",
-                }}
+					boxSizing: "border-box",
+					flex: "84 0 auto",
+					minWidth: "0px",
+					width: "84px",
+				}}
 			>
 				<span className="text-olive dark:text-dark-olive">Easy</span>
 			</div>
@@ -121,15 +121,15 @@ const ListItem = () => {
 				role="cell"
 				className="mx-2 flex items-center py-[11px]"
 				style={{
-                    boxSizing: "border-box",
-                    flex: "84 0 auto",
-                    minWidth: "0px",
-                    width: "84px",
-                }}
+					boxSizing: "border-box",
+					flex: "84 0 auto",
+					minWidth: "0px",
+					width: "84px",
+				}}
 			>
 				<a
 					className="flex h-full w-full flex-row items-center"
-					href="/subscribe/?ref=ps_fq"
+					href="LINK"
 					data-state="closed"
 				>
 					<div className="flex h-full w-full flex-row items-center">
