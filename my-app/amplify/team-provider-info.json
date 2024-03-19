@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-wquest-dev-172950-authRole",
+      "UnauthRoleArn": "arn:aws:iam::858805306720:role/amplify-wquest-dev-172950-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::858805306720:role/amplify-wquest-dev-172950-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-wquest-dev-172950-deployment",
+      "UnauthRoleName": "amplify-wquest-dev-172950-unauthRole",
+      "StackName": "amplify-wquest-dev-172950",
+      "StackId": "arn:aws:cloudformation:us-east-1:858805306720:stack/amplify-wquest-dev-172950/39cb01e0-d364-11ee-bfe1-0e595b312e39",
+      "AmplifyAppId": "d2ymkfckdzluit"
+    },
+    "categories": {
+      "auth": {
+        "wquest996f6d6b": {}
+      },
+      "storage": {
+        "wQuestNoSQL": {}
+      }
+    }
+  }
+}

@@ -1,2 +1,6 @@
 .venv
 database_secrets.py
+.env
+.env.local
+.DS_Store
+.git
