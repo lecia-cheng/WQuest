@@ -1,4 +1,4 @@
-import React from 'react'
+/*import React from 'react'
 import { Amplify } from 'aws-amplify';
 import awsconfig from '../../aws-exports';
 import { Authenticator, AmplifySignOut } from '@aws-amplify/ui-react';
@@ -20,4 +20,4 @@ nm    </div>
   )
 }
 
-export default Test;
+export default Test;*/
