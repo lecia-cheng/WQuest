@@ -4,12 +4,17 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
-const ListItem = () => {
+const ListItem = (props) => {
 	return (
 		<div
 			role="row"
 			className="odd:bg-layer-1 even:bg-overlay-1 dark:odd:bg-dark-layer-bg dark:even:bg-dark-fill-4"
-			style={{ display: "flex", flex: "1 0 auto", minWidth: "0px" }}
+			style={{
+				display: "flex",
+				flex: "1 0 auto",
+				minWidth: "0px",
+				backgroundColor: props.id % 2 ? "" : "rgb(0 0 0 / 10%)",
+			}}
 		>
 			<div
 				role="cell"
@@ -21,22 +26,27 @@ const ListItem = () => {
 					width: "52px",
 				}}
 			>
-				<a href="LINK">
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						viewBox="0 0 24 24"
-						width="1em"
-						height="1em"
-						fill="currentColor"
-						className="h-[18px] w-[18px] cursor-pointer text-green-s dark:text-dark-green-s"
-					>
-						<path
-							fill-rule="evenodd"
-							d="M19 11.063V7h-2v1a1 1 0 11-2 0V7H9v1a1 1 0 01-2 0V7H5v4.063h14zm0 2H5V19h14v-5.938zM9 5h6V4a1 1 0 112 0v1h2a2 2 0 012 2v12a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2V4a1 1 0 012 0v1z"
-							clip-rule="evenodd"
-						></path>
-					</svg>
-				</a>
+				<span>
+					{props.status ? (
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 24 24"
+							width="1em"
+							height="1em"
+							fill="currentColor"
+							class="h-4.5 w-4.5 text-lc-green-60 dark:text-dark-lc-green-60 inline-block shrink-0 fill-none stroke-current"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M21.6 12a9.6 9.6 0 01-9.6 9.6 9.6 9.6 0 110-19.2c1.507 0 2.932.347 4.2.965M19.8 6l-8.4 8.4L9 12"
+							></path>
+						</svg>
+					) : (
+						""
+					)}
+				</span>
 			</div>
 			<div
 				role="cell"
@@ -54,10 +64,10 @@ const ListItem = () => {
 						<div className="flex items-center">
 							<div className="truncate">
 								<a
-									href="LINK"
+									href={props.title}
 									className="h-5 hover:text-blue-s dark:hover:text-dark-blue-s"
 								>
-									543. Diameter of Binary Tree
+									{props.title}
 								</a>
 							</div>
 						</div>
@@ -76,7 +86,7 @@ const ListItem = () => {
 			>
 				<a
 					aria-label="solution"
-					href="LINK"
+					href={props.title + "/solution"}
 					className="truncate"
 				>
 					<svg
@@ -100,10 +110,9 @@ const ListItem = () => {
 					flex: "84 0 auto",
 					minWidth: "0px",
 					width: "84px",
-					cursor: "pointer",
 				}}
 			>
-				<span>59.8%</span>
+				<span>{props.acceptance}%</span>
 			</div>
 			<div
 				role="cell"
@@ -115,42 +124,13 @@ const ListItem = () => {
 					width: "84px",
 				}}
 			>
-				<span className="text-olive dark:text-dark-olive">Easy</span>
-			</div>
-			<div
-				role="cell"
-				className="mx-2 flex items-center py-[11px]"
-				style={{
-					boxSizing: "border-box",
-					flex: "84 0 auto",
-					minWidth: "0px",
-					width: "84px",
-				}}
-			>
-				<a
-					className="flex h-full w-full flex-row items-center"
-					href="LINK"
-					data-state="closed"
-				>
-					<div className="flex h-full w-full flex-row items-center">
-						<span className="h-2 flex-1 rounded-l-lg bg-fill-3 dark:bg-dark-fill-3"></span>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							viewBox="0 0 24 24"
-							width="1em"
-							height="1em"
-							fill="currentColor"
-							className="text-gray-5 dark:text-gray-7 -mt-1.5 h-5 w-5"
-						>
-							<path
-								fill-rule="evenodd"
-								d="M7 8v2H6a3 3 0 00-3 3v6a3 3 0 003 3h12a3 3 0 003-3v-6a3 3 0 00-3-3h-1V8A5 5 0 007 8zm8 0v2H9V8a3 3 0 116 0zm-3 6a2 2 0 100 4 2 2 0 000-4z"
-								clip-rule="evenodd"
-							></path>
-						</svg>
-						<span className="h-2 flex-1 rounded-r-lg bg-fill-3 dark:bg-dark-fill-3"></span>
-					</div>
-				</a>
+				{props.difficulty == 0 ? (
+					<span className="text-green-500">Easy</span>
+				) : props.difficulty == 1 ? (
+					<span className="text-yellow-500">Medium</span>
+				) : (
+					<span className="text-red-600">Hard</span>
+				)}
 			</div>
 		</div>
 	);

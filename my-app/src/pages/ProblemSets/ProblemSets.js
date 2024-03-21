@@ -33,11 +33,13 @@ const ProblemSets = () => {
 					<ProblemSetMenu />
 					<ProblemSetList />
 				</div>
-				<div className="col-span-4 md:col-span-1 bg-gray-700 text-gray-50 p-2 rounded-md">
-					<Calendar
-						onChange={onChange}
-						value={value}
-					/>
+				<div className="col-span-4 md:col-span-1 ">
+					<div class="col-span-4 md:col-span-1 bg-gray-700 text-gray-50 p-2 rounded-md">
+						<Calendar
+							onChange={onChange}
+							value={value}
+						/>
+					</div>
 				</div>
 			</div>
 		</div>
