@@ -28,7 +28,7 @@ const handlerTwoSum = (fn) => {
 			assert.deepStrictEqual(result, answers[i]);
 		}
 		return true;
-	} catch (erro) {
+	} catch (error) {
 		console.log("twoSum handler function error");
 		throw new Error(error);
 	}
