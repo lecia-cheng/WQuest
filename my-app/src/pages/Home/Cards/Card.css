@@ -1,0 +1,62 @@
+.card {
+    border-radius: 10px; /* Rounded corners */
+
+    position: relative; /* Needed for absolute positioning of children */
+    font-family: 'Arial', sans-serif; /* Example font */
+  }
+  
+  .card-image {
+    width: 100%; /* Make image fill the card */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px 10px 0 0; /* Only round the top corners */
+  }
+  
+  .card-content {
+    position: absolute; /* Position content over the image */
+    bottom: 0px; /* Position from the bottom */
+    text-align: left; /* Right align the text */
+    color: #FFF; /* Text color */
+    margin-left: 0.5vw;
+  }
+  
+  .card-title {
+    font-size: 1.2rem; /* Adjust size as needed */
+    font-weight: bold; /* Bold font */
+    margin-bottom: -2vh;
+  }
+  
+  .progress-circle {
+    width: 50px; /* Size of progress circle */
+    height: 50px; /* Size of progress circle */
+    border-radius: 50%; /* Make it round */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: #4CAF50; /* Text color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-left: 7vw;
+    margin-bottom: 2vh;
+  }
+  
+  .card-button {
+    font-size: 1rem;
+    display: block; /* Block level element */
+    width: 100px; /* Width of the button */
+    margin-top: 1rem; /* Space from the progress circle */
+    background-color: #4CAF50; /* Button color */
+    color: white;
+    text-align: center;
+    border-radius: 20px; /* Rounded corners for button */
+    border: none;
+    cursor: pointer;
+    outline: none;
+    position: absolute; /* Position button over the image */
+    bottom: 20px; /* Position from the bottom */
+  }
+  
+  /* Adjust the hover effect for the button */
+  .card-button:hover {
+    background-color: #367c39; /* Darker shade when hovered */
+  }
+  
