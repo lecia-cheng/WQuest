@@ -2,7 +2,6 @@ import Topbar from "@/components/Topbar/Topbar";
 import Workspace from "@/components/Workspace/Workspace";
 import useHasMounted from "@/hooks/useHasMounted";
 import { problems } from "@/utils/problems";
-import { Problem } from "@/utils/types/problem";
 import React from "react";
 
 
@@ -36,7 +35,7 @@ export async function getStaticPaths() {
 
 // getStaticProps => it fetch the data
 
-export async function getStaticProps({ params }: { params: pid }) {
+export async function getStaticProps({ params }) {
 	const { pid } = params;
 	const problem = problems[pid];
 

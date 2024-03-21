@@ -58,7 +58,7 @@ const ProblemSetMenu = () => {
 								</span>
 							</div>
 							<input
-								className="block w-full rounded-md leading-5 outline-none bg-gray-700 text-gray-50 border-none py-1.5 text-label-2 dark:text-dark-label-2 bg-fill-3 dark:bg-dark-fill-3 focus:bg-fill-2 dark:focus:bg-dark-fill-2 pl-9 pr-3 sentry-unmask"
+								className="block w-full rounded-md leading-5 outline-none bg-gray-700 text-gray-50 border-none py-1.5 text-label-2 pl-9 pr-3 sentry-unmask"
 								autocomplete="off"
 								type="text"
 								placeholder="Search questions"
