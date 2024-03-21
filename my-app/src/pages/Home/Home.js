@@ -23,8 +23,8 @@ const Home = () => {
 
 
                 <img className="logo" src={logo}></img>
-                <div className="container">
-                    <aside className="sidebar">
+                <div className="home-container">
+                    <aside className="home-sidebar">
                         <nav>
                             <ul>
                                 <li><button>Dashboard</button></li>
@@ -41,11 +41,11 @@ const Home = () => {
 
                 </div>
 
-                <div class="main-content">
+                <div class="home-main-content">
                     <header>
-                        <div className="titles">
-                            <div className="welcome">Welcome!</div>
-                            <div className="subtitle">Here is your Profile Dashboard</div>
+                        <div className="home-titles">
+                            <div className="home-welcome">Welcome!</div>
+                            <div className="home-subtitle">Here is your Profile Dashboard</div>
                         </div>
                         <div class="search-container">
                             <input type="text" class="search-input" placeholder="Search..."></input>
@@ -53,8 +53,8 @@ const Home = () => {
                         </div>
                     </header>
                     <section class="recent-tests">
-                        <h2 className="section-title">Recent Tests</h2>
-                        <div className="imgs">
+                        <h2 className="home-section-title">Recent Tests</h2>
+                        <div className="home-imgs">
                             <Card
                                 image={laptop}
                                 title="Hashsets"
@@ -66,19 +66,19 @@ const Home = () => {
                                 percentage="20"
                             />
                         </div>
-                        <img className="quiz" src={quiz}></img>
+                        <img className="home-quiz" src={quiz}></img>
 
                     </section>
-                    <section class="leaderboard">
-                        <h2 className="section-title1">Leader Board</h2>
-                        <img className="leaderboard" src={leaderboard}></img>
+                    <section class="home-leaderboard">
+                        <h2 className="home-section-title1">Leader Board</h2>
+                        <img className="home-leaderboard" src={leaderboard}></img>
 
-                        <div className="stats">
-                            <img className="testswritten" src={testswritten}></img>
+                        <div className="home-stats">
+                            <img className="home-testswritten" src={testswritten}></img>
                             <img className="average" src={average}></img>
 
                         </div>
-                        <img className="summary" src={summary}></img>
+                        <img className="home-summary" src={summary}></img>
                     </section>
                     <aside class="statistics">
 

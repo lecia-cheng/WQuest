@@ -9,20 +9,20 @@
   padding-top: 5vh;
 }
 
-.welcome{
+.home-welcome{
   font-weight: 600;
   font-size: 7vh;
 }
 
-.subtitle{
+.home-subtitle{
   color: gray;
 }
 
-.container {
+.home-container {
   display: flex;
 }
 
-.sidebar {
+.home-sidebar {
   width: 150px;
   display: flex;
   flex-direction: column;
@@ -30,12 +30,12 @@
   margin-left: 7vw;
 }
 
-.sidebar ul {
+.home-sidebar ul {
   list-style-type: none;
   padding: 0;
 }
 
-.sidebar button {
+.home-sidebar button {
   background: none;
   border: none;
   text-align: left;
@@ -44,12 +44,12 @@
   width: 100%;
 }
 
-.main-content{
+.home-main-content{
   padding-top: 0;
   margin-top: 0;
 }
 
-.main-content header{
+.home-main-content header{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -61,7 +61,7 @@
   width: 70%;
 }
 
-.main-content section{
+.home-main-content section{
   /* You might need to adjust these values */
   position: absolute;
   top: 15vh; /* Adjust this to align with your welcome text */
@@ -71,7 +71,7 @@
   margin-top: 2vh;
 }
 
-.imgs{
+.home-imgs{
   display: flex;          /* Use flexbox to align children */
   justify-content: space-around; /* Distribute space around items */
   align-items: center;    /* Align items vertically in the center */
@@ -79,7 +79,7 @@
   gap: 10px;             /* Space between items */
 }
 
-.imgs img {
+.home-imgs img {
   flex: 0 0 auto;          /* Do not grow or shrink, but allow basis to be auto */
   max-width: 11vw; /* 50% for 2 images side by side minus the gap */
   height: auto;       /* Maintain the aspect ratio */
@@ -87,37 +87,37 @@
 }
 
 
-.quiz{
+.home-quiz{
   margin-top: 2vh;
   width: 23vw;
   margin-left: 0vw;
 }
 
-.section-title1{
+.home-section-title1{
   margin-left: 15vw;
 }
 
-.leaderboard img{
+.home-leaderboard img{
   margin-left: 15vw;
 } 
 
-.stats{
+.home-stats{
   width: 15vw;
 }
-.testswritten{
+.home-testswritten{
   width: 15vw;
   margin-bottom: 2vh;
 }
 
 
-.leaderboard{
+.home-leaderboard{
   display: flex;             /* Align children using flexbox */
   flex-wrap: wrap;           /* Allow items to wrap to next line */
   justify-content: flex-start; /* Align to the start */
   gap: 10px;  
 }
 
-.summary{
+.home-summary{
   margin-left: auto;
   height: 35vh;
 }
@@ -159,7 +159,7 @@
   }
 }
 
-.leaderboard{
+.home-leaderboard{
   margin-left: 15vw;
   margin-top: 1vh; 
 }

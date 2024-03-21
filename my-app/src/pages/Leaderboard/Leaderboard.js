@@ -20,38 +20,38 @@ const leaderboardData = [
 
 const LeaderBoard = () => {
   return (
-    <div className="App">
-      <header className="header">
-        <img className="logo" src={logo} alt="Logo" />
-        <h1 className="leaderboard-header">LEADERBOARD</h1>
-        <div className="spacer"></div> {}
+    <div className="rank-App">
+      <header className="rank-header">
+        <img className="rank-logo" src={logo} alt="Logo" />
+        <h1 className="rank-leaderboard-header">LEADERBOARD</h1>
+        <div className="rank-spacer"></div> {}
       </header>
-      <div className="leaderboard-container">
-        <div className="leaderboard-names-box">
+      <div className="rank-leaderboard-container">
+        <div className="rank-leaderboard-names-box">
           {leaderboardData.map((user, index) => (
-            <div key={index} className="name-entry-container">
+            <div key={index} className="rank-name-entry-container">
               <img
                 src={user.image}
                 alt={`Rank ${user.rank}`}
                         className={`rank-image ${user.rank === 4 ? 'fourth-place' : user.rank === 5 ? 'fifth-place' : ''}`}
               />
               <div className={`name-entry rank-${user.rank}`}>
-                <div className="name">{user.name}</div>
+                <div className="rank-name">{user.name}</div>
               </div>
             </div>
           ))}
         </div>
-        <div className="leaderboard-scores-box">
+        <div className="rank-leaderboard-scores-box">
           {leaderboardData.map((user, index) => (
-            <div key={index} className="score-entry">
-              <div className="score-section">
-                <div className="score">{`${user.score}%`}</div>
-                <div className="label">Overall Average</div>
+            <div key={index} className="rank-score-entry">
+              <div className="rank-score-section">
+                <div className="rank-score">{`${user.score}%`}</div>
+                <div className="rank-label">Overall Average</div>
               </div>
-              <div className="divider"></div>
-              <div className="tests-section">
-                <div className="tests">{`${user.testsWritten}`}</div>
-                <div className="label">Tests Written</div>
+              <div className="rank-divider"></div>
+              <div className="rank-tests-section">
+                <div className="rank-tests">{`${user.testsWritten}`}</div>
+                <div className="rank-label">Tests Written</div>
               </div>
             </div>
           ))}

@@ -1,8 +1,10 @@
-.App {
+.rank-App {
   font-family: "Arial", sans-serif;
   background-color: #f3f2ff; 
   padding: 20px;
   text-align: center;
+  width: 100%;
+  height: 100%;
 }
 
 body {
@@ -10,11 +12,11 @@ body {
   margin: 0; 
 }
 
-.logo {
+.rank-logo {
   margin-bottom: 20px;
 }
 
-.leaderboard {
+.rank-leaderboard {
   max-width: 600px;
   margin: 0 auto;
   background-color: #fff; 
@@ -24,33 +26,33 @@ body {
   text-align: left;
 }
 
-.header {
+.rank-header {
   display: flex; 
   align-items: center; 
   justify-content: space-between; 
   padding: 20px; 
 }
 
-.logo-container, .spacer {
+.rank-logo-container, .spacer {
   flex: 0.5; 
 }
 
-.logo {
+.rank-logo {
   width: 150px; 
   height: auto; 
 }
 
-.leaderboard-header {
+.rank-leaderboard-header {
   font-family: 'Syne', sans-serif; 
   font-weight: 700; 
   font-size: 4em; 
   color: #FFFFFF;
   margin-bottom: 20px; 
-  text-align: center; 
+  margin-right: 8vw;
 }
 
 
-.leaderboard-entry {
+.rank-leaderboard-entry {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -60,28 +62,28 @@ body {
   border-radius: 10px;
 }
 
-.leaderboard-entry .rank {
+.rank-leaderboard-entry .rank {
   font-size: 24px;
   font-weight: bold;
 }
 
-.leaderboard-entry .name {
+.rank-leaderboard-entry .name {
   font-size: 20px;
   font-weight: 500;
   flex-grow: 1;
   padding: 0 20px; 
 }
 
-.stats {
+.rank-stats {
   text-align: right;
 }
 
-.stats .score {
+.rank-stats .rank-score {
   font-size: 20px;
   font-weight: bold;
 }
 
-.stats .tests-written {
+.rank-stats .rank-tests-written {
   display: block;
   font-size: 16px;
   color: #666;
@@ -110,12 +112,12 @@ body {
 }
 
 @media (max-width: 640px) {
-  .leaderboard-entry {
+  .rank-leaderboard-entry {
     flex-direction: column;
     align-items: flex-start;
   }
 
-  .stats {
+  .rank-stats {
     align-self: stretch;
     text-align: left;
     margin-top: 10px;
@@ -130,13 +132,13 @@ body {
   margin-right: 10px;
 }
 
-.leaderboard-container {
+.rank-leaderboard-container {
   display: flex;
   justify-content: space-between;
   margin: 20px;
 }
 
-.leaderboard-names-box {
+.rank-leaderboard-names-box {
   width: 48%; 
   background-color: transparent;
   border-radius: 35px;
@@ -144,7 +146,7 @@ body {
   padding: 20px;
 }
 
-.leaderboard-scores-box {
+.rank-leaderboard-scores-box {
   width: 48%; 
   background-color: #fff;
   border-radius: 45px;
@@ -152,20 +154,20 @@ body {
   padding: 20px;
 }
 
-.name-entry {
+.rank-name-entry {
   display: flex;
   align-items: center;
   padding: 10px;
   margin-bottom: 50px;
 }
 
-.name-entry-container {
+.rank-name-entry-container {
   display: flex;
   align-items: flex-start;
   margin-bottom: 10px; 
 }
 
-.name-entry, .score-entry {
+.rank-name-entry, .rank-score-entry {
   display: flex;
   align-items: center; 
   padding: 10px;
@@ -211,24 +213,24 @@ body {
 }
 
 @media (max-width: 768px) {
-  .leaderboard-container {
+  .rank-leaderboard-container {
     flex-direction: column;
   }
 
-  .leaderboard-names-box,
-  .leaderboard-scores-box {
+  .rank-leaderboard-names-box,
+  .rank-leaderboard-scores-box {
     width: 100%;
     margin-bottom: 20px;
   }
 }
 
-.leaderboard-scores-box {
+.rank-leaderboard-scores-box {
   /* ... */
   display: flex;
   flex-direction: column;
 }
 
-.score-entry {
+.rank-score-entry {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -239,30 +241,30 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.score-section,
-.tests-section {
+.rank-score-section,
+.rank-tests-section {
   text-align: center;
 }
 
-.divider {
+.rank-divider {
   height: 65px;
   width: 2px;
   background-color: #800080; 
   margin: 0 20px;
 }
 
-.score {
+.rank-score {
   font-size: 24px;
   font-weight: bold;
 }
 
-.tests {
+.rank-tests {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 5px;
 }
 
-.label {
+.rank-label {
   font-size: 14px;
   color: #666;
 }
